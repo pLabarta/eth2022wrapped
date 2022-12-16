@@ -9,32 +9,25 @@ Description: A brief overview of the project, including its main features and ho
 
 **1.** Instala rust si no está instalado, puedes instalarlo con el comando
 
-```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
- .
+`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
 2. Instalar mediante cargo las herramientas Trunk y wasm-bindgen-cli, que se pueden instalar mediante el comando
 
-cargo install trunk wasm-bindgen-cli
+`cargo install trunk wasm-bindgen-cli`
 
 Cargo es el gestor de paquetes de Rust y se usa para instalar las herramientas necesarias para el proyecto.
 
 3. Añadir el target de compilación wasm32-unknown-unknown. Este target es necesario para poder compilar código de Rust a WebAssembly. Puedes añadirlo con el comando
 
-rustup target add wasm32-unknown-unknown
-.
+`rustup target add wasm32-unknown-unknown`
 
 4. Ejecutar el comando
 
-trunk serve
-
-
-
+`trunk serve`
 
 Uso: La address está hardcodeada en el codigo, para ingresar el address que se busque explorar, se debe editar el codigo en el archivo main.rs y compilar con trunk server.
-
 
 Documentacion:
 Flipside Schroom SDK: https://docs.flipsidecrypto.com/shroomdk-sdk/get-started
 
 License: A statement indicating the license under which the project is released.
-```
