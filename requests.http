@@ -1,0 +1,7 @@
+GET https://node-api.flipsidecrypto.com/queries/queryRun-faa5e26c948ada7b5ea0a4e044eec314 HTTP/1.1
+x-api-key: 3c338bf6-8a74-4ec4-8b18-55b7d1db7004
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
