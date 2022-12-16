@@ -41,6 +41,15 @@ pub fn app() -> Html {
                 <h1>{"Your "}<span class="grande">{"2022"}</span>{" Ethereum Wrapped"}</h1>
                 <p>{"Todo lo que pasó por tu wallet en 2022"}</p>
                 <p>{"(y lo que no, también)"}</p>
+
+                <div class="team">
+                    <img src="static/img/bunny.png" />
+                    <p>{"By Anomalous Cibercafé"}</p>
+                </div>
+                <div class="team">
+                    <img src="static/img/think.png" />
+                    <p>{"Powered by Think & Dev"}</p>
+                </div>
             </section>
 
             <TotalTxs address = {address.clone()} />

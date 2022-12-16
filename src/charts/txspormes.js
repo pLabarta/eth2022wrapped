@@ -1,7 +1,7 @@
 
 export function show_txspormes_chart(data) {
 
-    let margin = { top: 30, right: 30, bottom: 70, left: 60 },
+    let margin = { top: 30, right: 30, bottom: 100, left: 60 },
         width = 900 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 

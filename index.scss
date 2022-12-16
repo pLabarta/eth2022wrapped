@@ -24,6 +24,19 @@ h1 {
     text-align: center;
 }
 
+text {
+    font-size: 1rem;
+}
+
+.team {
+    display: flex;
+    gap: 0;
+    width: 400px;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+
 .grande {
     font-size: 80px;
     line-height: 80px;

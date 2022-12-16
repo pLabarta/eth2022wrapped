@@ -1,9 +1,9 @@
 
 export function show_inout_chart(data) {
 
-    let margin = { top: 30, right: 30, bottom: 70, left: 60 },
-        width = 1200 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom;
+    let margin = { top: 30, right: 30, bottom: 100, left: 60 },
+        width = 900 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
 
     // append svg object
     let svg = d3.select("#chart-inout")
@@ -52,7 +52,7 @@ export function show_inout_chart(data) {
         .attr("y", function (d) { return y(d.inflow); })
         .attr("width", x.bandwidth())
         .attr("height", function (d) { return Math.abs(y(0) - y(d.inflow)); })
-        .attr("fill", "green")
+        .attr("fill", "#42C920")
 
     svg.selectAll("mybar")
         .data(data)
@@ -62,12 +62,12 @@ export function show_inout_chart(data) {
         .attr("y", function (d) { return y(0); })
         .attr("width", x.bandwidth())
         .attr("height", function (d) { return Math.abs(y(d.outflow) - y(0)); })
-        .attr("fill", "red")
+        .attr("fill", "#E92649")
 
     svg.append("path")
         .datum(data)
         .attr("fill", "none")
-        .attr("stroke", "#0a0a0a")
+        .attr("stroke", "#fefefe")
         .attr("stroke-width", 2)
         .attr("d", d3.line()
             .x(function (d) { return x(d.name) + x.bandwidth() / 2 })
@@ -83,7 +83,7 @@ export function show_inout_chart(data) {
         .attr("cx", function (d) { return x(d.name) + x.bandwidth() / 2 })
         .attr("cy", function (d) { return y(d.netflow) })
         .attr("r", 5)
-        .attr("fill", "#0a0a0a")
+        .attr("fill", "#fefefe")
 
 
 

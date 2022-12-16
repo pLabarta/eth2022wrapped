@@ -107,8 +107,16 @@ pub fn inout(props: &Props) -> Html {
 
     html! {
         <>
-            <h2>{"Tu inflow y outflow mensual"}</h2>
-            <div id="chart-inout"></div>
+            <section>
+                <p class="dialog">{"Pero todos queremos saber"}</p>
+                <p class="datoclave">{"cuánto"}</p>
+                <p class="dialog">{"movimos"}</p>
+            </section>
+
+            <section>
+                <div class="grafico" id="chart-inout"></div>
+            </section>
+
         </>
     }
 }

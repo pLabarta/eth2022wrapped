@@ -137,7 +137,11 @@ SELECT COALESCE(label, 'protocolos no identificados') AS protocolo, COUNT(*) AS 
             //         })}
             //     </tbody>
             // </table>
-            // <div id="chart-topinteractions"></div>
+            <section>
+                <p class="dialogo">{"Tu top #3"}</p>
+                <div class="grafico" id="chart-topinteractions"></div>
+            </section>
+
         </>
     }
 }
